@@ -3,9 +3,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-debug": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "format": "prettier --write .",
+    "format-verify": "prettier --check .",
+    "lint": "eslint . --fix",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "typecheck": "tsc",
+    "verify": "npm run typecheck && npm run lint && npm run format-verify"
   },
   "dependencies": {
     "next": "12.0.2",
@@ -15,8 +20,11 @@
   "devDependencies": {
     "@types/node": "16.11.6",
     "@types/react": "17.0.34",
+    "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.2",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.4.4"
   }
 }
