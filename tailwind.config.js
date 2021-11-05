@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      // comfortaa: ['Comfortaa', 'sans-serif'],
+      quickSand: ['Quicksand', 'sans-serif']
+    }
   },
   variants: {
     extend: {},
