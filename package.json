@@ -2,7 +2,7 @@
   "name": "nextjs-reactquery-tailwindcss",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3030",
     "dev-debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "format": "prettier --write .",
     "format-verify": "prettier --check .",
