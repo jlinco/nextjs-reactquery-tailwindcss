@@ -6,6 +6,24 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# lock files
+*.lock
+
+# local configs
+.vscode/
+.vscode/launch.json
+.vscode/settings.json
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
